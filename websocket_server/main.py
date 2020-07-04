@@ -4,7 +4,7 @@ from googleapiclient import discovery
 from oauth2client.service_account import ServiceAccountCredentials
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'vnkdjjvtlhfl1232#'
+app.config['SECRET_KEY'] = '{SECRET_KEY}'
 sockets = Sockets(app)
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name('cse546-276423-33d9698813ad.json')
